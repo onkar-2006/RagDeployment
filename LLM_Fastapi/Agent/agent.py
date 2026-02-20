@@ -7,8 +7,8 @@ from langchain_core.tools import tool
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode
-from Prompt import SYSTEM_PROMPT
-from Vector_Store import VectorStore
+from Prompts.Prompt import SYSTEM_PROMPT
+from VectorStore.Vector_Store import VectorStore
 
 retriever = VectorStore().load_vectorStore()
 
